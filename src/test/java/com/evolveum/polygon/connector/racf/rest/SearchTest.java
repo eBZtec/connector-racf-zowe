@@ -14,6 +14,6 @@ public class SearchTest extends BaseTest{
         ListResultHandler handler = new ListResultHandler();
         facade.search(ObjectClass.ACCOUNT, null, handler, null);
 
-        AssertJUnit.assertTrue(handler.getObjects().size() > 0);
+        AssertJUnit.assertTrue(!handler.getObjects().isEmpty());
     }
 }

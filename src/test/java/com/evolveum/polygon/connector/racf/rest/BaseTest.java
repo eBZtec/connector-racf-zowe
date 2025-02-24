@@ -11,7 +11,7 @@ public abstract class BaseTest {
     protected ConnectorFacade setupConnector() {
 
         RacfRestConfiguration config = new RacfRestConfiguration();
-        config.setUrl("http://localhost:11223");
+        config.setUrl("http://localhost:8000");
         config.setUsername("user");
         config.setPassword(new GuardedString("user".toCharArray()));
 
