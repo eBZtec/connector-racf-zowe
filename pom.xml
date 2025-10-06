@@ -59,6 +59,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
+                <!-- uncomment those lines above when generate package for veracode scan -->
 <!--                <configuration>-->
 <!--                    <descriptorRefs>-->
 <!--                        <descriptorRef>jar-with-dependencies</descriptorRef>-->
@@ -73,14 +74,17 @@
 <!--                        </goals>-->
 <!--                    </execution>-->
 <!--                </executions>-->
+                <!-- end here -->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <!-- uncomment those lines above when generate package for veracode scan -->
 <!--                <configuration>-->
 <!--                    <debug>true</debug>-->
 <!--                    <debuglevel>lines,vars,source</debuglevel>-->
 <!--                </configuration>-->
+                <!-- end here -->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
