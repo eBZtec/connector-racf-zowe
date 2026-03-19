@@ -1,8 +1,5 @@
 package com.evolveum.polygon.connector.racf.rest.api;
 
-import org.identityconnectors.framework.common.exceptions.InvalidAttributeValueException;
-
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

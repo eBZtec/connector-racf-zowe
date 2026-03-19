@@ -26,11 +26,9 @@ public class RacfRestConnection extends ConnectionHandler {
 
     private static final Log LOG = Log.getLog(RacfRestConnection.class);
 
-    private RacfRestConfiguration configuration;
-
-    private static final Class USER_CLASS = UserService.class;
-    private static final Class GROUP_CLASS = GroupService.class;
-    private static final Class TEST_SERVICE = TestService.class;
+    private static final Class<UserService> USER_CLASS = UserService.class;
+    private static final Class<GroupService> GROUP_CLASS = GroupService.class;
+    private static final Class<TestService> TEST_SERVICE = TestService.class;
 
     private UserService userService;
     private GroupService groupService;
@@ -41,9 +39,10 @@ public class RacfRestConnection extends ConnectionHandler {
     }
 
     public void setUpConnections() {
-        userService = (UserService) setupClient(USER_CLASS);
-        groupService = (GroupService) setupClient(GROUP_CLASS);
-        testService = (TestService) setupClient(TEST_SERVICE);
+        LOG.info("Setting up connections");
+        userService = setupClient(USER_CLASS);
+        groupService = setupClient(GROUP_CLASS);
+        testService = setupClient(TEST_SERVICE);
 
         LOG.info("The connector services initialized successfully");
     }

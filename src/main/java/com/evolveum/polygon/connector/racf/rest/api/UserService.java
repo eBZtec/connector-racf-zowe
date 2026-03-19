@@ -1,7 +1,7 @@
 package com.evolveum.polygon.connector.racf.rest.api;
 
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
+import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
 
 @Path("/api/v2/racf/rest")
 @Produces(MediaType.APPLICATION_JSON)

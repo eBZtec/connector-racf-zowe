@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.introspect.VisibilityChecker;
-import com.fasterxml.jackson.jaxrs.json.JacksonJaxbJsonProvider;
+import com.fasterxml.jackson.jakarta.rs.json.JacksonJsonProvider;
 import org.apache.cxf.jaxrs.client.JAXRSClientFactoryBean;
 
 public abstract class ConnectionHandler {
@@ -30,7 +30,7 @@ public abstract class ConnectionHandler {
             }
         }
 
-        JacksonJaxbJsonProvider provider = new JacksonJaxbJsonProvider();
+        JacksonJsonProvider provider = new JacksonJsonProvider();
         ObjectMapper mapper = new ObjectMapper();
         mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
         mapper.setVisibility(VisibilityChecker.Std.defaultInstance().withFieldVisibility(JsonAutoDetect.Visibility.ANY));
