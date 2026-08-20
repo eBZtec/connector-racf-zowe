@@ -22,12 +22,12 @@
     <parent>
         <artifactId>connector-parent</artifactId>
         <groupId>com.evolveum.polygon</groupId>
-        <version>1.5.2.0</version>
+        <version>1.5.1.0</version>
     </parent>
 
     <groupId>com.evolveum.polygon.connector</groupId>
     <artifactId>connector-racf-rest</artifactId>
-    <version>2.1.1</version>
+    <version>2.1.2</version>
     <packaging>jar</packaging>
 
     <name>RacfRest</name>
