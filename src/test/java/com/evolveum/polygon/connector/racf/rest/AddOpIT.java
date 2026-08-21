@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import java.util.*;
 
-public class AddTest extends BaseTest{
+public class AddOpIT extends BaseIT{
 
     private static final String NAME_USER_ADD = "addUser";
     private static final String TESTE_IDENTITY_NAME = "artur";

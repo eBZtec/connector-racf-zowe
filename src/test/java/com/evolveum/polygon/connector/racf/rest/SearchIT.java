@@ -5,7 +5,7 @@ import org.identityconnectors.framework.common.objects.ObjectClass;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
-public class SearchTest extends BaseTest{
+public class SearchIT extends BaseIT{
 
     @Test
     public void searchAllAccounts() throws Exception {

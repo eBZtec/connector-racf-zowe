@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.util.HashSet;
 import java.util.Set;
 
-public class UpdateTest extends BaseTest{
+public class UpdateOpIT extends BaseIT{
 
     @Test(priority = 10)
     public void changeAttribute() throws Exception {

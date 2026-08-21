@@ -6,7 +6,7 @@ import org.identityconnectors.framework.api.ConnectorFacade;
 import org.identityconnectors.framework.api.ConnectorFacadeFactory;
 import org.identityconnectors.test.common.TestHelpers;
 
-public abstract class BaseTest {
+public abstract class BaseIT {
 
     protected ConnectorFacade setupConnector() {
 

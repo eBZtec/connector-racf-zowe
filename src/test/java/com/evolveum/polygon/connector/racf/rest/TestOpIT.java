@@ -5,7 +5,7 @@ import org.identityconnectors.framework.api.ConnectorFacade;
 import org.identityconnectors.framework.common.exceptions.ConnectionFailedException;
 import org.testng.annotations.Test;
 
-public class TestOpTest extends BaseTest{
+public class TestOpIT extends BaseIT{
 
     @Test
     public void valid() {
